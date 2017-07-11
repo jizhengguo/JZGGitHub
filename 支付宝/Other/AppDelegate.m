@@ -17,7 +17,7 @@
  vc1.tabBarItem.selectedImage = [UIImage imageNamed:@"TabBar_HomeBar_Sel"];
  */
 #import "AppDelegate.h"
-#import "UIColor+Addition.h"
+#import "ZFBTabBarController.h"
 
 
 @interface AppDelegate ()
@@ -33,9 +33,9 @@
     _window = [[UIWindow alloc] init];
     
     // 2.创建标签控制器
-    UITabBarController *tabBarVC = [[UITabBarController alloc] init];
+    ZFBTabBarController *tabBarVC = [[ZFBTabBarController alloc] init];
     
-  
+  /**
     // 3.创建四个子控制器
     UIViewController *vc1 = [self createChildViewController:@"ZFBHomeController" andTabBarItemWithImageName:@"TabBar_HomeBar" andTabBarItemWithTitle:@"生活"];
     
@@ -50,7 +50,7 @@
     
     // 设置标签栏的渲染颜色
     tabBarVC.tabBar.tintColor = [UIColor colorWithHex:0x2e90d4];
-    
+    */
     // 给窗口设置根控制器
     _window.rootViewController = tabBarVC;
     
@@ -69,7 +69,7 @@
  @param className 子控制器字符串格式的类名
  @param imageName 图标名称
  @param title 标题
- */
+ 
 - (UIViewController *)createChildViewController:(NSString *)className andTabBarItemWithImageName:(NSString *)imageName andTabBarItemWithTitle:(NSString *)title{
     // 把字符串类型的类名转换成class
     Class cla = NSClassFromString(className);
@@ -91,7 +91,7 @@
     return vc;
     
 }
-
+*/
 
 
 
