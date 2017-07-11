@@ -37,7 +37,7 @@
 }
 
 /**
- 创建标签控制器的子控制器,并且设置标签栏上的内容
+ 创建标签控制器的子控制器,并且设置标签栏上的内容,把控制器再包装一个导航控制器,最终返回导航控制器
  
  @param className 子控制器字符串格式的类名
  @param imageName 图标名称
@@ -51,7 +51,7 @@
     UIViewController *vc = [[cla alloc] init];
     
     // 设置标签栏对应的标签
-    vc.tabBarItem.title = title;
+//    vc.tabBarItem.title = title;
     // 设置标签栏上的图片
     vc.tabBarItem.image = [UIImage imageNamed:imageName];
     
@@ -60,8 +60,18 @@
     // 设置标签样上的选中状态图片"让选中状态图片不渲染"
     vc.tabBarItem.selectedImage = [[UIImage imageNamed:selImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
+    
+    // 给子控制器包装一个导航控制器
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    // 设置栈顶控制器对应导航条上的内容
+//    vc.navigationItem.title = title;
+    
+    
+    // 当标签栏上的标题和导航条上的标题一样时,可以用控制器的title属性
+    vc.title = title;
     // 返回控制器
-    return vc;
+    return nav;
     
 }
 
