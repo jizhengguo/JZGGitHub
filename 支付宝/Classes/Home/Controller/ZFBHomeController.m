@@ -6,12 +6,19 @@
 //  Copyright © 2017年 itheima. All rights reserved.
 //
 
+/** 代理的三步:
+ 1.遵守协议
+ 2.设置代理 "在那里创建的委托者就在那里去设置代理"
+ 3.实现相应协议
+ 
+ 
+ */
 #import "ZFBHomeController.h"
 #import "ZFBHomeTopView.h"
 #import "UIColor+Addition.h"
 #import "Masonry.h"
 
-@interface ZFBHomeController ()
+@interface ZFBHomeController ()<ZFBHomeTopViewDelegate>
 
 @end
 
@@ -24,6 +31,10 @@
     
     // 1.顶部视图
     ZFBHomeTopView *topView = [[ZFBHomeTopView alloc] init];
+    
+    // 设置代理
+    topView.delegate = self;
+    
     // 设置背景颜色
     topView.backgroundColor = [UIColor colorWithHex:0x2e90d4];
     
@@ -49,6 +60,22 @@
 
 
 
+#pragma mark - homeTopView代理 方法
+- (void)homeTopView:(ZFBHomeTopView *)homeTopView andBtnClickType:(ZFBHomeTopViewBtnType)type {
+    
+    switch (type) {
+        case ZFBHomeTopViewBtnTypeScan: {
+            
+            UIViewController *vc = [[UIViewController alloc] init];
+            vc.view.backgroundColor = [UIColor whiteColor];
+            [self.navigationController pushViewController:vc animated:YES];
+            
+            break;
+        }
+        default:
+            break;
+    }
+}
 
 
 
