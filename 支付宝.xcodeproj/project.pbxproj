@@ -8,24 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		18B69ABE1F146679008590E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69ABD1F146679008590E8 /* main.m */; };
-		18B69AC11F146679008590E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69AC01F146679008590E8 /* AppDelegate.m */; };
-		18B69AC41F146679008590E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69AC31F146679008590E8 /* ViewController.m */; };
-		18B69AC71F146679008590E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B69AC51F146679008590E8 /* Main.storyboard */; };
 		18B69AC91F146679008590E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B69AC81F146679008590E8 /* Assets.xcassets */; };
 		18B69ACC1F146679008590E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B69ACA1F146679008590E8 /* LaunchScreen.storyboard */; };
+		18B69AF71F146742008590E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69AF61F146742008590E8 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18B69AB91F146679008590E8 /* 支付宝.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "支付宝.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B69ABD1F146679008590E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		18B69ABF1F146679008590E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		18B69AC01F146679008590E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18B69AC21F146679008590E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18B69AC31F146679008590E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		18B69AC61F146679008590E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18B69AC81F146679008590E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18B69ACB1F146679008590E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18B69ACD1F146679008590E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B69AF51F146742008590E8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18B69AF61F146742008590E8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +53,10 @@
 		18B69ABB1F146679008590E8 /* 支付宝 */ = {
 			isa = PBXGroup;
 			children = (
-				18B69ABF1F146679008590E8 /* AppDelegate.h */,
-				18B69AC01F146679008590E8 /* AppDelegate.m */,
-				18B69AC21F146679008590E8 /* ViewController.h */,
-				18B69AC31F146679008590E8 /* ViewController.m */,
-				18B69AC51F146679008590E8 /* Main.storyboard */,
-				18B69AC81F146679008590E8 /* Assets.xcassets */,
-				18B69ACA1F146679008590E8 /* LaunchScreen.storyboard */,
-				18B69ACD1F146679008590E8 /* Info.plist */,
+				18B69AF21F146742008590E8 /* Common(分类) */,
+				18B69AF31F146742008590E8 /* Lib(第三方框架) */,
+				18B69AD31F146742008590E8 /* Classes */,
+				18B69AF41F146742008590E8 /* Other */,
 				18B69ABC1F146679008590E8 /* Supporting Files */,
 			);
 			path = "支付宝";
@@ -74,9 +65,249 @@
 		18B69ABC1F146679008590E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18B69AC81F146679008590E8 /* Assets.xcassets */,
+				18B69ACA1F146679008590E8 /* LaunchScreen.storyboard */,
+				18B69ACD1F146679008590E8 /* Info.plist */,
 				18B69ABD1F146679008590E8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18B69AD31F146742008590E8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				18B69AE81F146742008590E8 /* Main(主要文件) */,
+				18B69AE31F146742008590E8 /* Home(支付宝) */,
+				18B69AD41F146742008590E8 /* Business(口碑) */,
+				18B69ADE1F146742008590E8 /* Friends(朋友) */,
+				18B69AED1F146742008590E8 /* Mine(我的) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		18B69AD41F146742008590E8 /* Business(口碑) */ = {
+			isa = PBXGroup;
+			children = (
+				18B69AD51F146742008590E8 /* Controller */,
+				18B69AD61F146742008590E8 /* Model */,
+				18B69AD71F146742008590E8 /* Other */,
+				18B69AD81F146742008590E8 /* View */,
+			);
+			name = "Business(口碑)";
+			path = Business;
+			sourceTree = "<group>";
+		};
+		18B69AD51F146742008590E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18B69AD61F146742008590E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18B69AD71F146742008590E8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		18B69AD81F146742008590E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18B69ADE1F146742008590E8 /* Friends(朋友) */ = {
+			isa = PBXGroup;
+			children = (
+				18B69ADF1F146742008590E8 /* Controller */,
+				18B69AE01F146742008590E8 /* Model */,
+				18B69AE11F146742008590E8 /* Other */,
+				18B69AE21F146742008590E8 /* View */,
+			);
+			name = "Friends(朋友)";
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		18B69ADF1F146742008590E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18B69AE01F146742008590E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18B69AE11F146742008590E8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		18B69AE21F146742008590E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18B69AE31F146742008590E8 /* Home(支付宝) */ = {
+			isa = PBXGroup;
+			children = (
+				18B69AE41F146742008590E8 /* Controller */,
+				18B69AE51F146742008590E8 /* Model */,
+				18B69AE61F146742008590E8 /* Other */,
+				18B69AE71F146742008590E8 /* View */,
+			);
+			name = "Home(支付宝)";
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18B69AE41F146742008590E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18B69AE51F146742008590E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18B69AE61F146742008590E8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		18B69AE71F146742008590E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18B69AE81F146742008590E8 /* Main(主要文件) */ = {
+			isa = PBXGroup;
+			children = (
+				18B69AE91F146742008590E8 /* Controller */,
+				18B69AEA1F146742008590E8 /* Model */,
+				18B69AEB1F146742008590E8 /* Other */,
+				18B69AEC1F146742008590E8 /* View */,
+			);
+			name = "Main(主要文件)";
+			path = Main;
+			sourceTree = "<group>";
+		};
+		18B69AE91F146742008590E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18B69AEA1F146742008590E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18B69AEB1F146742008590E8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		18B69AEC1F146742008590E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18B69AED1F146742008590E8 /* Mine(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				18B69AEE1F146742008590E8 /* Controller */,
+				18B69AEF1F146742008590E8 /* Model */,
+				18B69AF01F146742008590E8 /* Other */,
+				18B69AF11F146742008590E8 /* View */,
+			);
+			name = "Mine(我的)";
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		18B69AEE1F146742008590E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18B69AEF1F146742008590E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18B69AF01F146742008590E8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		18B69AF11F146742008590E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18B69AF21F146742008590E8 /* Common(分类) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Common(分类)";
+			path = Common;
+			sourceTree = "<group>";
+		};
+		18B69AF31F146742008590E8 /* Lib(第三方框架) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Lib(第三方框架)";
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		18B69AF41F146742008590E8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				18B69AF51F146742008590E8 /* AppDelegate.h */,
+				18B69AF61F146742008590E8 /* AppDelegate.m */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +336,7 @@
 		18B69AB11F146679008590E8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZFB;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = itheima;
 				TargetAttributes = {
@@ -139,7 +371,6 @@
 			files = (
 				18B69ACC1F146679008590E8 /* LaunchScreen.storyboard in Resources */,
 				18B69AC91F146679008590E8 /* Assets.xcassets in Resources */,
-				18B69AC71F146679008590E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,23 +381,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B69AC41F146679008590E8 /* ViewController.m in Sources */,
-				18B69AC11F146679008590E8 /* AppDelegate.m in Sources */,
 				18B69ABE1F146679008590E8 /* main.m in Sources */,
+				18B69AF71F146742008590E8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		18B69AC51F146679008590E8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18B69AC61F146679008590E8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		18B69ACA1F146679008590E8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -309,6 +531,7 @@
 				18B69AD21F146679008590E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
