@@ -8,6 +8,7 @@
 
 #import "ZFBHomeTopView.h"
 #import "NSAttributedString+Additon.h"
+#import "Masonry.h"
 
 @implementation ZFBHomeTopView
 
@@ -29,22 +30,63 @@
 
 - (void)setupUI {
     
-    UIButton *scanBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    UIButton *scanBtn = [self makeHomeTopViewWithImageName:@"home_scan" andBtnWithTitle:@"扫一扫"];
+    UIButton *payBtn = [self makeHomeTopViewWithImageName:@"home_pay" andBtnWithTitle:@"付款"];
+    UIButton *cardBtn = [self makeHomeTopViewWithImageName:@"home_card" andBtnWithTitle:@"卡券"];
+    UIButton *xiuBtn = [self makeHomeTopViewWithImageName:@"home_xiu" andBtnWithTitle:@"咻一咻"];
     
-    // 创建属性文本"把图片和文本拼接到一起"富文本
-    NSAttributedString *attr = [NSAttributedString imageTextWithImage:[UIImage imageNamed:@"home_scan"] imageWH:35 title:@"扫一扫" fontSize:14 titleColor:[UIColor whiteColor] spacing:8];
-    // 设置按钮的属性文本
-    [scanBtn setAttributedTitle:attr forState:UIControlStateNormal];
-    scanBtn.frame = CGRectMake(0, 0, 115, 115);
+    // 给子控件批处理加相同约束
+    [self.subviews mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.offset(0);
+    }];
     
-    // 设置按钮中文字换行
-    scanBtn.titleLabel.numberOfLines = 0;
-    // 设置按钮中文字居中
-    scanBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
-    [self addSubview:scanBtn];
+//    [scanBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.offset(0);
+//    }];
+//    
+//    [payBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(scanBtn.mas_right).offset(0);
+//        make.width.equalTo(scanBtn.mas_width).offset(0);
+//    }];
+//    
+//    [cardBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(payBtn.mas_right).offset(0);
+//        make.width.equalTo(payBtn.mas_width).offset(0);
+//    }];
+//    
+//    [xiuBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.equalTo(cardBtn.mas_right).offset(0);
+//        make.width.equalTo(cardBtn.mas_width).offset(0);
+//        make.right.offset(0);
+//    }];
     
+    // 此方法是指定间距来间距设置宽或高
+    [self.subviews mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedSpacing:0 leadSpacing:0 tailSpacing:0];
+    
+    // 此方法是指定宽或高来让间距来设置间距
+//    self.subviews mas_distributeViewsAlongAxis:MASAxisTypeHorizontal withFixedItemLength:<#(CGFloat)#> leadSpacing:<#(CGFloat)#> tailSpacing:<#(CGFloat)#>
 }
 
+
+
+
+- (UIButton *)makeHomeTopViewWithImageName:(NSString *)imageName andBtnWithTitle:(NSString *)title  {
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    
+    // 创建属性文本"把图片和文本拼接到一起"富文本
+    NSAttributedString *attr = [NSAttributedString imageTextWithImage:[UIImage imageNamed:imageName] imageWH:35 title:title fontSize:14 titleColor:[UIColor whiteColor] spacing:8];
+    // 设置按钮的属性文本
+    [btn setAttributedTitle:attr forState:UIControlStateNormal];
+    
+    // 设置按钮中文字换行
+    btn.titleLabel.numberOfLines = 0;
+    // 设置按钮中文字居中
+    btn.titleLabel.textAlignment = NSTextAlignmentCenter;
+    [self addSubview:btn];
+    
+    return btn;
+}
 
 
 @end
