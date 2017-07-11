@@ -25,15 +25,19 @@
     
     
     
+    
+    
     // 2.设置导航条的背景色
     // 下面两行代码结合起来才能把阴影线去掉,但导航也变得彻底透明
     [self.navigationBar setShadowImage:[UIImage new]];
     [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     
     // 设置导航条及状态栏的背景色
+//    [UIColor colorWithPatternImage:[UIImage imageNamed:@"TabBar_Assets_Sel"] 用图片来当颜色
     self.navigationBar.barTintColor = [UIColor colorWithHex:0x2e90d4];
     
-    // 关闭导航条的半透明效果"半透明关闭后,控制器的view会短了64的高度C"
+    
+    // 关闭导航条的半透明效果"半透明关闭后,控制器的view会短了64的高度"
     self.navigationBar.translucent = NO;
     
 }

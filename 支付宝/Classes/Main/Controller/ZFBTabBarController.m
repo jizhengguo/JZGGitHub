@@ -34,6 +34,8 @@
     // 设置标签栏的渲染颜色
     self.tabBar.tintColor = [UIColor colorWithHex:0x2e90d4];
 
+    // 关闭标签栏的半透明效果
+    self.tabBar.translucent = NO;
     
 }
 
