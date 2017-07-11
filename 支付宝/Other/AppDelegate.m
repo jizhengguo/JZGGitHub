@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ZFBHomeController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,38 @@
 
 @implementation AppDelegate
 
-
+// 应用程序第一次启动完成后就会调用此方法
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+   
+    // 1.创建窗口
+    _window = [[UIWindow alloc] init];
+    
+    // 2.创建标签控制器
+    UITabBarController *tabBarVC = [[UITabBarController alloc] init];
+    
+    // 创建标签控制器的子控制器
+    ZFBHomeController *vc1 = [[ZFBHomeController alloc] init];
+    
+    // 设置标签栏对应的标签
+    vc1.tabBarItem.title = @"生活";
+    // 设置标签栏上的图片
+    vc1.tabBarItem.image = [UIImage imageNamed:@"TabBar_HomeBar"];
+    // 设置标签样上的选中状态图片
+    vc1.tabBarItem.selectedImage = [UIImage imageNamed:@"TabBar_HomeBar_Sel"];
+    
+    
+    
+    // 给标签控制器添加子控制器
+    tabBarVC.viewControllers = @[vc1];
+    
+    
+    // 给窗口设置根控制器
+    _window.rootViewController = tabBarVC;
+    
+    // 让窗口成为主窗口并可视
+    [_window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

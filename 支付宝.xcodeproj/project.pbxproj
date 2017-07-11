@@ -11,6 +11,10 @@
 		18B69AC91F146679008590E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B69AC81F146679008590E8 /* Assets.xcassets */; };
 		18B69ACC1F146679008590E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B69ACA1F146679008590E8 /* LaunchScreen.storyboard */; };
 		18B69AF71F146742008590E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69AF61F146742008590E8 /* AppDelegate.m */; };
+		18B69AFA1F146B7D008590E8 /* ZFBHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69AF91F146B7D008590E8 /* ZFBHomeController.m */; };
+		18B69AFD1F146B8D008590E8 /* ZFBBusinessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69AFC1F146B8D008590E8 /* ZFBBusinessController.m */; };
+		18B69B001F146BA8008590E8 /* ZFBFriendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69AFF1F146BA8008590E8 /* ZFBFriendsController.m */; };
+		18B69B031F146BB6008590E8 /* ZFBMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B021F146BB6008590E8 /* ZFBMineController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,14 @@
 		18B69ACD1F146679008590E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B69AF51F146742008590E8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18B69AF61F146742008590E8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18B69AF81F146B7D008590E8 /* ZFBHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBHomeController.h; sourceTree = "<group>"; };
+		18B69AF91F146B7D008590E8 /* ZFBHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBHomeController.m; sourceTree = "<group>"; };
+		18B69AFB1F146B8D008590E8 /* ZFBBusinessController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBBusinessController.h; sourceTree = "<group>"; };
+		18B69AFC1F146B8D008590E8 /* ZFBBusinessController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBBusinessController.m; sourceTree = "<group>"; };
+		18B69AFE1F146BA8008590E8 /* ZFBFriendsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBFriendsController.h; sourceTree = "<group>"; };
+		18B69AFF1F146BA8008590E8 /* ZFBFriendsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBFriendsController.m; sourceTree = "<group>"; };
+		18B69B011F146BB6008590E8 /* ZFBMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBMineController.h; sourceTree = "<group>"; };
+		18B69B021F146BB6008590E8 /* ZFBMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBMineController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				18B69AE81F146742008590E8 /* Main(主要文件) */,
-				18B69AE31F146742008590E8 /* Home(支付宝) */,
+				18B69AE31F146742008590E8 /* Home(生活) */,
 				18B69AD41F146742008590E8 /* Business(口碑) */,
 				18B69ADE1F146742008590E8 /* Friends(朋友) */,
 				18B69AED1F146742008590E8 /* Mine(我的) */,
@@ -100,6 +112,8 @@
 		18B69AD51F146742008590E8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18B69AFB1F146B8D008590E8 /* ZFBBusinessController.h */,
+				18B69AFC1F146B8D008590E8 /* ZFBBusinessController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -140,6 +154,8 @@
 		18B69ADF1F146742008590E8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18B69AFE1F146BA8008590E8 /* ZFBFriendsController.h */,
+				18B69AFF1F146BA8008590E8 /* ZFBFriendsController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,7 +181,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		18B69AE31F146742008590E8 /* Home(支付宝) */ = {
+		18B69AE31F146742008590E8 /* Home(生活) */ = {
 			isa = PBXGroup;
 			children = (
 				18B69AE41F146742008590E8 /* Controller */,
@@ -173,13 +189,15 @@
 				18B69AE61F146742008590E8 /* Other */,
 				18B69AE71F146742008590E8 /* View */,
 			);
-			name = "Home(支付宝)";
+			name = "Home(生活)";
 			path = Home;
 			sourceTree = "<group>";
 		};
 		18B69AE41F146742008590E8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18B69AF81F146B7D008590E8 /* ZFBHomeController.h */,
+				18B69AF91F146B7D008590E8 /* ZFBHomeController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,6 +278,8 @@
 		18B69AEE1F146742008590E8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18B69B011F146BB6008590E8 /* ZFBMineController.h */,
+				18B69B021F146BB6008590E8 /* ZFBMineController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -381,8 +401,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B69B001F146BA8008590E8 /* ZFBFriendsController.m in Sources */,
+				18B69AFD1F146B8D008590E8 /* ZFBBusinessController.m in Sources */,
+				18B69AFA1F146B7D008590E8 /* ZFBHomeController.m in Sources */,
 				18B69ABE1F146679008590E8 /* main.m in Sources */,
 				18B69AF71F146742008590E8 /* AppDelegate.m in Sources */,
+				18B69B031F146BB6008590E8 /* ZFBMineController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
