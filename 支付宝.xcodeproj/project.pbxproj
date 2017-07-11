@@ -29,6 +29,7 @@
 		18B69B311F14AE68008590E8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B241F14AE68008590E8 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		18B69B321F14AE68008590E8 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B261F14AE68008590E8 /* View+MASAdditions.m */; };
 		18B69B331F14AE68008590E8 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B291F14AE68008590E8 /* ViewController+MASAdditions.m */; };
+		18B69B361F14B176008590E8 /* NSAttributedString+Additon.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B351F14B176008590E8 /* NSAttributedString+Additon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,8 @@
 		18B69B271F14AE68008590E8 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		18B69B281F14AE68008590E8 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		18B69B291F14AE68008590E8 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		18B69B341F14B176008590E8 /* NSAttributedString+Additon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Additon.h"; sourceTree = "<group>"; };
+		18B69B351F14B176008590E8 /* NSAttributedString+Additon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Additon.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,6 +364,8 @@
 		18B69AF21F146742008590E8 /* Common(分类) */ = {
 			isa = PBXGroup;
 			children = (
+				18B69B341F14B176008590E8 /* NSAttributedString+Additon.h */,
+				18B69B351F14B176008590E8 /* NSAttributedString+Additon.m */,
 				18B69B041F147047008590E8 /* UIColor+Addition.h */,
 				18B69B051F147047008590E8 /* UIColor+Addition.m */,
 			);
@@ -493,6 +498,7 @@
 				18B69B001F146BA8008590E8 /* ZFBFriendsController.m in Sources */,
 				18B69AFD1F146B8D008590E8 /* ZFBBusinessController.m in Sources */,
 				18B69B091F147284008590E8 /* ZFBTabBarController.m in Sources */,
+				18B69B361F14B176008590E8 /* NSAttributedString+Additon.m in Sources */,
 				18B69B0C1F14791B008590E8 /* ZFBNavigationController.m in Sources */,
 				18B69B0F1F14ADFC008590E8 /* ZFBHomeTopView.m in Sources */,
 				18B69B331F14AE68008590E8 /* ViewController+MASAdditions.m in Sources */,
