@@ -43,6 +43,24 @@
 //    NSLog(@"%.f", ((UILabel *)self.navigationBar.subviews[1].subviews.firstObject).font.pointSize);
 //}
 
+// 设置状态栏文字颜色"如果有导航控制器设置状态栏的颜色权限是由导航控制器设置,"
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
+//- (BOOL)prefersStatusBarHidden {
+//    return YES;
+//}
+
+// self.topViewController 获取当前导航控制器中的栈顶控制器
+// 把状态栏设置权限交给当前的栈顶控制器设置
+//- (UIViewController *)childViewControllerForStatusBarStyle {
+//    
+//    return self.topViewController;
+//}
 
 
+//- (UIViewController *)childViewControllerForStatusBarHidden {
+//    
+//}
 @end
