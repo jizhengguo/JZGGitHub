@@ -5,9 +5,20 @@
 //  Created by apple on 2017/7/11.
 //  Copyright © 2017年 itheima. All rights reserved.
 //
-
+/**
+ // 创建标签控制器的子控制器
+ ZFBHomeController *vc1 = [[ZFBHomeController alloc] init];
+ 
+ // 设置标签栏对应的标签
+ vc1.tabBarItem.title = @"生活";
+ // 设置标签栏上的图片
+ vc1.tabBarItem.image = [UIImage imageNamed:@"TabBar_HomeBar"];
+ // 设置标签样上的选中状态图片
+ vc1.tabBarItem.selectedImage = [UIImage imageNamed:@"TabBar_HomeBar_Sel"];
+ */
 #import "AppDelegate.h"
-#import "ZFBHomeController.h"
+#import "UIColor+Addition.h"
+
 
 @interface AppDelegate ()
 
@@ -17,28 +28,28 @@
 
 // 应用程序第一次启动完成后就会调用此方法
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-   
+    
     // 1.创建窗口
     _window = [[UIWindow alloc] init];
     
     // 2.创建标签控制器
     UITabBarController *tabBarVC = [[UITabBarController alloc] init];
     
-    // 创建标签控制器的子控制器
-    ZFBHomeController *vc1 = [[ZFBHomeController alloc] init];
+  
+    // 3.创建四个子控制器
+    UIViewController *vc1 = [self createChildViewController:@"ZFBHomeController" andTabBarItemWithImageName:@"TabBar_HomeBar" andTabBarItemWithTitle:@"生活"];
     
-    // 设置标签栏对应的标签
-    vc1.tabBarItem.title = @"生活";
-    // 设置标签栏上的图片
-    vc1.tabBarItem.image = [UIImage imageNamed:@"TabBar_HomeBar"];
-    // 设置标签样上的选中状态图片
-    vc1.tabBarItem.selectedImage = [UIImage imageNamed:@"TabBar_HomeBar_Sel"];
+    UIViewController *vc2 = [self createChildViewController:@"ZFBBusinessController" andTabBarItemWithImageName:@"TabBar_Businesses" andTabBarItemWithTitle:@"口碑"];
     
+    UIViewController *vc3 = [self createChildViewController:@"ZFBFriendsController" andTabBarItemWithImageName:@"TabBar_Friends" andTabBarItemWithTitle:@"朋友"];
     
+    UIViewController *vc4 = [self createChildViewController:@"ZFBMineController" andTabBarItemWithImageName:@"TabBar_Assets" andTabBarItemWithTitle:@"我的"];
     
     // 给标签控制器添加子控制器
-    tabBarVC.viewControllers = @[vc1];
+    tabBarVC.viewControllers = @[vc1, vc2, vc3, vc4];
     
+    // 设置标签栏的渲染颜色
+    tabBarVC.tabBar.tintColor = [UIColor colorWithHex:0x2e90d4];
     
     // 给窗口设置根控制器
     _window.rootViewController = tabBarVC;
@@ -49,6 +60,43 @@
     
     return YES;
 }
+
+
+
+/**
+ 创建标签控制器的子控制器,并且设置标签栏上的内容
+
+ @param className 子控制器字符串格式的类名
+ @param imageName 图标名称
+ @param title 标题
+ */
+- (UIViewController *)createChildViewController:(NSString *)className andTabBarItemWithImageName:(NSString *)imageName andTabBarItemWithTitle:(NSString *)title{
+    // 把字符串类型的类名转换成class
+    Class cla = NSClassFromString(className);
+    
+    // 创建标签控制器的子控制器
+    UIViewController *vc = [[cla alloc] init];
+    
+    // 设置标签栏对应的标签
+    vc.tabBarItem.title = title;
+    // 设置标签栏上的图片
+    vc.tabBarItem.image = [UIImage imageNamed:imageName];
+    
+    // 拼接选中状态图片名称
+    NSString *selImageName = [imageName stringByAppendingString:@"_Sel"];
+    // 设置标签样上的选中状态图片"让选中状态图片不渲染"
+    vc.tabBarItem.selectedImage = [[UIImage imageNamed:selImageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    // 返回控制器
+    return vc;
+    
+}
+
+
+
+
+
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

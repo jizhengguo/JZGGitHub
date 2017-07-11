@@ -15,6 +15,7 @@
 		18B69AFD1F146B8D008590E8 /* ZFBBusinessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69AFC1F146B8D008590E8 /* ZFBBusinessController.m */; };
 		18B69B001F146BA8008590E8 /* ZFBFriendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69AFF1F146BA8008590E8 /* ZFBFriendsController.m */; };
 		18B69B031F146BB6008590E8 /* ZFBMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B021F146BB6008590E8 /* ZFBMineController.m */; };
+		18B69B061F147047008590E8 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B051F147047008590E8 /* UIColor+Addition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		18B69AFF1F146BA8008590E8 /* ZFBFriendsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBFriendsController.m; sourceTree = "<group>"; };
 		18B69B011F146BB6008590E8 /* ZFBMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBMineController.h; sourceTree = "<group>"; };
 		18B69B021F146BB6008590E8 /* ZFBMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBMineController.m; sourceTree = "<group>"; };
+		18B69B041F147047008590E8 /* UIColor+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Addition.h"; sourceTree = "<group>"; };
+		18B69B051F147047008590E8 /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +311,8 @@
 		18B69AF21F146742008590E8 /* Common(分类) */ = {
 			isa = PBXGroup;
 			children = (
+				18B69B041F147047008590E8 /* UIColor+Addition.h */,
+				18B69B051F147047008590E8 /* UIColor+Addition.m */,
 			);
 			name = "Common(分类)";
 			path = Common;
@@ -407,6 +412,7 @@
 				18B69ABE1F146679008590E8 /* main.m in Sources */,
 				18B69AF71F146742008590E8 /* AppDelegate.m in Sources */,
 				18B69B031F146BB6008590E8 /* ZFBMineController.m in Sources */,
+				18B69B061F147047008590E8 /* UIColor+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
