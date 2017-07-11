@@ -17,6 +17,7 @@
 		18B69B031F146BB6008590E8 /* ZFBMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B021F146BB6008590E8 /* ZFBMineController.m */; };
 		18B69B061F147047008590E8 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B051F147047008590E8 /* UIColor+Addition.m */; };
 		18B69B091F147284008590E8 /* ZFBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B081F147284008590E8 /* ZFBTabBarController.m */; };
+		18B69B0C1F14791B008590E8 /* ZFBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B0B1F14791B008590E8 /* ZFBNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		18B69B051F147047008590E8 /* UIColor+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Addition.m"; sourceTree = "<group>"; };
 		18B69B071F147284008590E8 /* ZFBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBTabBarController.h; sourceTree = "<group>"; };
 		18B69B081F147284008590E8 /* ZFBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBTabBarController.m; sourceTree = "<group>"; };
+		18B69B0A1F14791B008590E8 /* ZFBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBNavigationController.h; sourceTree = "<group>"; };
+		18B69B0B1F14791B008590E8 /* ZFBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +249,8 @@
 			children = (
 				18B69B071F147284008590E8 /* ZFBTabBarController.h */,
 				18B69B081F147284008590E8 /* ZFBTabBarController.m */,
+				18B69B0A1F14791B008590E8 /* ZFBNavigationController.h */,
+				18B69B0B1F14791B008590E8 /* ZFBNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -414,6 +419,7 @@
 				18B69B001F146BA8008590E8 /* ZFBFriendsController.m in Sources */,
 				18B69AFD1F146B8D008590E8 /* ZFBBusinessController.m in Sources */,
 				18B69B091F147284008590E8 /* ZFBTabBarController.m in Sources */,
+				18B69B0C1F14791B008590E8 /* ZFBNavigationController.m in Sources */,
 				18B69AFA1F146B7D008590E8 /* ZFBHomeController.m in Sources */,
 				18B69ABE1F146679008590E8 /* main.m in Sources */,
 				18B69AF71F146742008590E8 /* AppDelegate.m in Sources */,

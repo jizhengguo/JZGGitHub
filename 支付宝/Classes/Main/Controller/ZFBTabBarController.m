@@ -8,6 +8,7 @@
 
 #import "ZFBTabBarController.h"
 #import "UIColor+Addition.h"
+#import "ZFBNavigationController.h"
 
 @interface ZFBTabBarController ()
 
@@ -62,7 +63,7 @@
     
     
     // 给子控制器包装一个导航控制器
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    ZFBNavigationController *nav = [[ZFBNavigationController alloc] initWithRootViewController:vc];
     
     // 设置栈顶控制器对应导航条上的内容
 //    vc.navigationItem.title = title;
@@ -70,6 +71,8 @@
     
     // 当标签栏上的标题和导航条上的标题一样时,可以用控制器的title属性
     vc.title = title;
+    
+    vc.view.backgroundColor = [UIColor whiteColor];
     // 返回控制器
     return nav;
     
