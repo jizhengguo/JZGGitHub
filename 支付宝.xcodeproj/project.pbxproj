@@ -12,7 +12,6 @@
 		18B69ACC1F146679008590E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B69ACA1F146679008590E8 /* LaunchScreen.storyboard */; };
 		18B69AF71F146742008590E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69AF61F146742008590E8 /* AppDelegate.m */; };
 		18B69AFA1F146B7D008590E8 /* ZFBHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69AF91F146B7D008590E8 /* ZFBHomeController.m */; };
-		18B69AFD1F146B8D008590E8 /* ZFBBusinessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69AFC1F146B8D008590E8 /* ZFBBusinessController.m */; };
 		18B69B001F146BA8008590E8 /* ZFBFriendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69AFF1F146BA8008590E8 /* ZFBFriendsController.m */; };
 		18B69B031F146BB6008590E8 /* ZFBMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B021F146BB6008590E8 /* ZFBMineController.m */; };
 		18B69B061F147047008590E8 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B051F147047008590E8 /* UIColor+Addition.m */; };
@@ -30,6 +29,14 @@
 		18B69B321F14AE68008590E8 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B261F14AE68008590E8 /* View+MASAdditions.m */; };
 		18B69B331F14AE68008590E8 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B291F14AE68008590E8 /* ViewController+MASAdditions.m */; };
 		18B69B361F14B176008590E8 /* NSAttributedString+Additon.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B351F14B176008590E8 /* NSAttributedString+Additon.m */; };
+		18B69B4A1F14C9DE008590E8 /* ZFBBusinessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B3A1F14C9DE008590E8 /* ZFBBusinessController.m */; };
+		18B69B4B1F14C9DE008590E8 /* ZFBBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B3D1F14C9DE008590E8 /* ZFBBusiness.m */; };
+		18B69B4C1F14C9DE008590E8 /* business.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18B69B3F1F14C9DE008590E8 /* business.plist */; };
+		18B69B4D1F14C9DE008590E8 /* Business.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B69B411F14C9DE008590E8 /* Business.storyboard */; };
+		18B69B4E1F14C9DE008590E8 /* HMLevelStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B441F14C9DE008590E8 /* HMLevelStar.m */; };
+		18B69B4F1F14C9DE008590E8 /* ZFBBusinessCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B461F14C9DE008590E8 /* ZFBBusinessCell.m */; };
+		18B69B501F14C9DE008590E8 /* ZFBBusinessHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B69B481F14C9DE008590E8 /* ZFBBusinessHeaderView.m */; };
+		18B69B511F14C9DE008590E8 /* ZFBBusinessHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B69B491F14C9DE008590E8 /* ZFBBusinessHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +49,6 @@
 		18B69AF61F146742008590E8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18B69AF81F146B7D008590E8 /* ZFBHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBHomeController.h; sourceTree = "<group>"; };
 		18B69AF91F146B7D008590E8 /* ZFBHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBHomeController.m; sourceTree = "<group>"; };
-		18B69AFB1F146B8D008590E8 /* ZFBBusinessController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBBusinessController.h; sourceTree = "<group>"; };
-		18B69AFC1F146B8D008590E8 /* ZFBBusinessController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBBusinessController.m; sourceTree = "<group>"; };
 		18B69AFE1F146BA8008590E8 /* ZFBFriendsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBFriendsController.h; sourceTree = "<group>"; };
 		18B69AFF1F146BA8008590E8 /* ZFBFriendsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBFriendsController.m; sourceTree = "<group>"; };
 		18B69B011F146BB6008590E8 /* ZFBMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBMineController.h; sourceTree = "<group>"; };
@@ -83,6 +88,19 @@
 		18B69B291F14AE68008590E8 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		18B69B341F14B176008590E8 /* NSAttributedString+Additon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Additon.h"; sourceTree = "<group>"; };
 		18B69B351F14B176008590E8 /* NSAttributedString+Additon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Additon.m"; sourceTree = "<group>"; };
+		18B69B391F14C9DE008590E8 /* ZFBBusinessController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBBusinessController.h; sourceTree = "<group>"; };
+		18B69B3A1F14C9DE008590E8 /* ZFBBusinessController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBBusinessController.m; sourceTree = "<group>"; };
+		18B69B3C1F14C9DE008590E8 /* ZFBBusiness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBBusiness.h; sourceTree = "<group>"; };
+		18B69B3D1F14C9DE008590E8 /* ZFBBusiness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBBusiness.m; sourceTree = "<group>"; };
+		18B69B3F1F14C9DE008590E8 /* business.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = business.plist; sourceTree = "<group>"; };
+		18B69B411F14C9DE008590E8 /* Business.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Business.storyboard; sourceTree = "<group>"; };
+		18B69B431F14C9DE008590E8 /* HMLevelStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMLevelStar.h; sourceTree = "<group>"; };
+		18B69B441F14C9DE008590E8 /* HMLevelStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMLevelStar.m; sourceTree = "<group>"; };
+		18B69B451F14C9DE008590E8 /* ZFBBusinessCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBBusinessCell.h; sourceTree = "<group>"; };
+		18B69B461F14C9DE008590E8 /* ZFBBusinessCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBBusinessCell.m; sourceTree = "<group>"; };
+		18B69B471F14C9DE008590E8 /* ZFBBusinessHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBBusinessHeaderView.h; sourceTree = "<group>"; };
+		18B69B481F14C9DE008590E8 /* ZFBBusinessHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBBusinessHeaderView.m; sourceTree = "<group>"; };
+		18B69B491F14C9DE008590E8 /* ZFBBusinessHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZFBBusinessHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,53 +158,11 @@
 			children = (
 				18B69AE81F146742008590E8 /* Main(主要文件) */,
 				18B69AE31F146742008590E8 /* Home(生活) */,
-				18B69AD41F146742008590E8 /* Business(口碑) */,
+				18B69B371F14C9DE008590E8 /* Business(口碑) */,
 				18B69ADE1F146742008590E8 /* Friends(朋友) */,
 				18B69AED1F146742008590E8 /* Mine(我的) */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		18B69AD41F146742008590E8 /* Business(口碑) */ = {
-			isa = PBXGroup;
-			children = (
-				18B69AD51F146742008590E8 /* Controller */,
-				18B69AD61F146742008590E8 /* Model */,
-				18B69AD71F146742008590E8 /* Other */,
-				18B69AD81F146742008590E8 /* View */,
-			);
-			name = "Business(口碑)";
-			path = Business;
-			sourceTree = "<group>";
-		};
-		18B69AD51F146742008590E8 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				18B69AFB1F146B8D008590E8 /* ZFBBusinessController.h */,
-				18B69AFC1F146B8D008590E8 /* ZFBBusinessController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		18B69AD61F146742008590E8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		18B69AD71F146742008590E8 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		18B69AD81F146742008590E8 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		18B69ADE1F146742008590E8 /* Friends(朋友) */ = {
@@ -423,6 +399,67 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		18B69B371F14C9DE008590E8 /* Business(口碑) */ = {
+			isa = PBXGroup;
+			children = (
+				18B69B381F14C9DE008590E8 /* Controller */,
+				18B69B3B1F14C9DE008590E8 /* Model */,
+				18B69B3E1F14C9DE008590E8 /* Other */,
+				18B69B401F14C9DE008590E8 /* View */,
+			);
+			name = "Business(口碑)";
+			path = Business;
+			sourceTree = "<group>";
+		};
+		18B69B381F14C9DE008590E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18B69B391F14C9DE008590E8 /* ZFBBusinessController.h */,
+				18B69B3A1F14C9DE008590E8 /* ZFBBusinessController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18B69B3B1F14C9DE008590E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18B69B3C1F14C9DE008590E8 /* ZFBBusiness.h */,
+				18B69B3D1F14C9DE008590E8 /* ZFBBusiness.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18B69B3E1F14C9DE008590E8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				18B69B3F1F14C9DE008590E8 /* business.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		18B69B401F14C9DE008590E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18B69B411F14C9DE008590E8 /* Business.storyboard */,
+				18B69B421F14C9DE008590E8 /* LevelStar */,
+				18B69B451F14C9DE008590E8 /* ZFBBusinessCell.h */,
+				18B69B461F14C9DE008590E8 /* ZFBBusinessCell.m */,
+				18B69B471F14C9DE008590E8 /* ZFBBusinessHeaderView.h */,
+				18B69B481F14C9DE008590E8 /* ZFBBusinessHeaderView.m */,
+				18B69B491F14C9DE008590E8 /* ZFBBusinessHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18B69B421F14C9DE008590E8 /* LevelStar */ = {
+			isa = PBXGroup;
+			children = (
+				18B69B431F14C9DE008590E8 /* HMLevelStar.h */,
+				18B69B441F14C9DE008590E8 /* HMLevelStar.m */,
+			);
+			path = LevelStar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -483,6 +520,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B69ACC1F146679008590E8 /* LaunchScreen.storyboard in Resources */,
+				18B69B4C1F14C9DE008590E8 /* business.plist in Resources */,
+				18B69B511F14C9DE008590E8 /* ZFBBusinessHeaderView.xib in Resources */,
+				18B69B4D1F14C9DE008590E8 /* Business.storyboard in Resources */,
 				18B69AC91F146679008590E8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,24 +536,28 @@
 			files = (
 				18B69B321F14AE68008590E8 /* View+MASAdditions.m in Sources */,
 				18B69B001F146BA8008590E8 /* ZFBFriendsController.m in Sources */,
-				18B69AFD1F146B8D008590E8 /* ZFBBusinessController.m in Sources */,
+				18B69B4F1F14C9DE008590E8 /* ZFBBusinessCell.m in Sources */,
 				18B69B091F147284008590E8 /* ZFBTabBarController.m in Sources */,
+				18B69B4A1F14C9DE008590E8 /* ZFBBusinessController.m in Sources */,
 				18B69B361F14B176008590E8 /* NSAttributedString+Additon.m in Sources */,
 				18B69B0C1F14791B008590E8 /* ZFBNavigationController.m in Sources */,
 				18B69B0F1F14ADFC008590E8 /* ZFBHomeTopView.m in Sources */,
 				18B69B331F14AE68008590E8 /* ViewController+MASAdditions.m in Sources */,
 				18B69B2E1F14AE68008590E8 /* MASViewAttribute.m in Sources */,
+				18B69B501F14C9DE008590E8 /* ZFBBusinessHeaderView.m in Sources */,
 				18B69B2A1F14AE68008590E8 /* MASCompositeConstraint.m in Sources */,
 				18B69AFA1F146B7D008590E8 /* ZFBHomeController.m in Sources */,
 				18B69ABE1F146679008590E8 /* main.m in Sources */,
 				18B69B2C1F14AE68008590E8 /* MASConstraintMaker.m in Sources */,
 				18B69B2B1F14AE68008590E8 /* MASConstraint.m in Sources */,
 				18B69B311F14AE68008590E8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				18B69B4E1F14C9DE008590E8 /* HMLevelStar.m in Sources */,
 				18B69B2D1F14AE68008590E8 /* MASLayoutConstraint.m in Sources */,
 				18B69B301F14AE68008590E8 /* NSArray+MASAdditions.m in Sources */,
 				18B69AF71F146742008590E8 /* AppDelegate.m in Sources */,
 				18B69B031F146BB6008590E8 /* ZFBMineController.m in Sources */,
 				18B69B061F147047008590E8 /* UIColor+Addition.m in Sources */,
+				18B69B4B1F14C9DE008590E8 /* ZFBBusiness.m in Sources */,
 				18B69B2F1F14AE68008590E8 /* MASViewConstraint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

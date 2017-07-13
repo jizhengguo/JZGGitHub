@@ -1,5 +1,5 @@
 //
-//  ZFBBusinessController.h
+//  ZFBBusinessHeaderView.h
 //  05-口碑
 //
 //  Created by apple on 2017/7/5.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZFBBusinessController : UITableViewController
-
+@interface ZFBBusinessHeaderView : UIView
+// 加载xib创建头部视图
++ (instancetype)businessHeaderView;
 @end
